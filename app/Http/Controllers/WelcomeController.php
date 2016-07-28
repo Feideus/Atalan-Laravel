@@ -6,13 +6,14 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
+use App\Utilisateur;
+
 class WelcomeController extends Controller
 {
   public function index()
   {
-    $Data = App\User::all()->toArray();
-
-    return view('AtalanViews/welcome', compact('Data'));
+    $data = Utilisateur::all()->toArray();
+    return view('AtalanViews/view2', compact('data'));
     
   }
 }

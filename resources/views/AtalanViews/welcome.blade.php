@@ -1,16 +1,45 @@
-@extends ('Master')
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Laravel</title>
 
-@section('Header')
+        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
-<button><a href="#" style="text-decoration: none;">Add a User</a></button>
+        <style>
+            html, body {
+                height: 100%;
+            }
 
-@stop
+            body {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                display: table;
+                font-weight: 100;
+                font-family: 'Lato', sans-serif;
+            }
 
-@section('Content')
+            .container {
+                text-align: center;
+                display: table-cell;
+                vertical-align: middle;
+            }
 
+            .content {
+                text-align: center;
+                display: inline-block;
+            }
 
-@foreach($Data as $Info)
-<li style="color: grey;">{{ $Info }}</li>
-
-
-@stop
+            .title {
+                font-size: 96px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="content">
+                <div class="title">Laravel 5</div>
+            </div>
+        </div>
+    </body>
+</html>

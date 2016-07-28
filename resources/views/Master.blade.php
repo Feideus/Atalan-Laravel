@@ -1,14 +1,16 @@
+<?php session_start();?>
 <!DOCTYPE html>
 
 <html>
   <head>
-      <title>Back office !</title>
+      <title>User Management</title>
   </head>
   <body>
-    <header style ="text-align: center;">
+    <header style="text-align: center;">
       <div>
-	<h2>Back Office</h2>
+	<h2>User Management</h2>
       </div>
+    </header>
       <div>
 	@yield('Header')
       </div>
