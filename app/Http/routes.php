@@ -19,6 +19,7 @@ Route::post('/editUser/miseAJour','editUserController@miseAJour');
 
 Route::get('/addUser', 'addUserController@index');
 
-Route::post('/addUser/createUser','addUserController@addUp');
+Route::post('/addUser/createUser','addUserController@store');
+
 
 Route::get('/deleteUser/{id}',['uses' =>'WelcomeController@delete']);

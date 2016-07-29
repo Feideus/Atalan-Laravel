@@ -2,10 +2,12 @@
 
 <html>
   <head>
-      <title>User Management</title>
+    <link rel="stylesheet" href="{{ URL::asset('Css/Master.css') }}"/>
+    <title>User Management</title>
+    @yield('Head')
   </head>
   <body>
-    <header style="text-align: center; margin-bottom: 4%;">
+    <header>
       <div>
 	<h2>User Management</h2>
       </div>

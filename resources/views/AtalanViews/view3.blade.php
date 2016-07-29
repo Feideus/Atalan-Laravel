@@ -1,14 +1,18 @@
 @extends('Master')
 
+@section('Head')
+<link rel="stylesheet" href="{{ URL::asset('Css/view3.css') }}"/>
+@stop
+
 @section('Header')
-<div style="border: 1px solid black; text-align: center; position: relative; width: 80%; left: 10%;padding: 5px;"><p>/!\ Les informations entrees dans les champs si dessous seront sauvegardees definitivement /!\ </p></div>
+<div id="div1"><p>/!\ Les informations entrees dans les champs si dessous seront sauvegardees definitivement /!\ </p></div>
 @stop
 
 @section('Content')
 
-<form method="POST" action="miseAJour" style=" position:relative; margin-top:5%; width : 30%; left: 6.7%;">
+<form method="POST" action="miseAJour" >
   
-  <ul style="list-style-type:none;">
+  <ul>
     <?php $index = 0;?>
   @foreach($user as $info)
   @foreach($info as $info2)
@@ -48,7 +52,7 @@ elseif($index == 5)
   @endforeach
   @endforeach
   </ul>
-  <div style= "margin-top:10px; position:relative; left: 10%;"><button type="submit" >Envoyer</button></div>
+  <div id="div2" ><button type="submit" >Envoyer</button></div>
 </form>
 @stop
 
