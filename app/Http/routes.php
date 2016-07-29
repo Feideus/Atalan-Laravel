@@ -13,4 +13,12 @@
 
 Route::get('/', 'WelcomeController@index');
 
-Route::get('/addUser', 'AddUserController@index');
+Route::get('/editUser/{id}', ['uses' =>'editUserController@index']);
+
+Route::post('/editUser/miseAJour','editUserController@miseAJour');
+
+Route::get('/addUser', 'addUserController@index');
+
+Route::post('/addUser/createUser','addUserController@addUp');
+
+Route::get('/deleteUser/{id}',['uses' =>'WelcomeController@delete']);

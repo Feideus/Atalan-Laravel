@@ -16,4 +16,10 @@ class WelcomeController extends Controller
     return view('AtalanViews/view2', compact('data'));
     
   }
+
+  public function delete($id)
+  {
+    $data = Utilisateur::where('id', $id)->delete();
+    return redirect()->action('WelcomeController@index');
+  }
 }

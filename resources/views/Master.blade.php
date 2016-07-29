@@ -1,4 +1,3 @@
-<?php session_start();?>
 <!DOCTYPE html>
 
 <html>
@@ -6,7 +5,7 @@
       <title>User Management</title>
   </head>
   <body>
-    <header style="text-align: center;">
+    <header style="text-align: center; margin-bottom: 4%;">
       <div>
 	<h2>User Management</h2>
       </div>
@@ -24,6 +23,6 @@
     <div id="SecondDiv">
       <p id="SecondP"></p>
     </div>
-    <footer>@yield('Javascript')</footer>
+    <footer>@yield('Footer')</footer>
   </body>
 </html>
